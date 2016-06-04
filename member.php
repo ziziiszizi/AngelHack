@@ -34,9 +34,10 @@
 	</div>
 	
 	<div id="order">
-		<button type="button" class="btn btn-info">
+		<button onclick="location.href = 'order.php';" id="myButton" class="float-left submit-button" >
 			<span class="glyphicon glyphicon-plus"></span> ORDER
         </button>
-	</button>
+	</div>
+		
 </body>
 </html>

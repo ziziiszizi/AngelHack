@@ -12,6 +12,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="member.php">HOME</a></li>
         <li><a href="#cart">CART</a></li>
+		<li><a href="#history">HISTORY</a></li>
 		<li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ACCOUNT
 			<span class="caret"></span></a>

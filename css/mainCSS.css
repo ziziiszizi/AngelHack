@@ -84,3 +84,9 @@ th, td{
 	font-size:24px;
 	padding: 10px;
 }
+
+.item{
+	
+	width: 500px;
+	height: 500px;
+}
