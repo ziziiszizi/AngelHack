@@ -53,6 +53,61 @@
 				<td></td>
 			</tr>
 		</table>
+
+
+						<?php
+				  //DO NOT CHANGE
+				  $merchant_id = "MOLWallet_Dev1";
+				  $verifykey   = "c6c5cdaabf772a366e1b5ba8a512afac";
+				  $orderid     = "TEAM_NAME".rand(1,9999999);
+
+				  //Change the location
+				  $returnurl   = "http://localhost/AngelHack/return.php";
+				  $callbackurl = "http://localhost/AngelHack/callback.php";
+
+				  //CHANGE THE VALUE ONLY 
+				  //THE VALUE IS JUST A SAMPLE
+				  $Payment_URL = "https://pay.molpay.com/MOLPay/pay/";
+				  $amount      = "17";
+				  $bill_name   = "Yoona";
+				  $bill_email  = "yoona@gmail.com";
+				  $bill_mobile = "60163218880";
+				  $bill_desc   = "Food Delivery";
+				  $country     = "MY";
+				  $currency    = "MYR";
+				  $channel     = "MOLWallet";
+				  $langcode    = "en";
+				  $vcode       = md5($amount.$merchant_id.$orderid.$verifykey); 
+
+				  //DO NOT CHANGE
+				   $param   =  [
+				         'orderid'    => $orderid,
+				         'channel'    => $channel,
+				         'currency'   => $currency,
+				         'amount'   => $amount,
+				         'bill_name'  => $bill_name,
+				         'bill_email' => $bill_email,
+				         'bill_mobile'  => $bill_mobile,
+				         'bill_desc'  => $bill_desc,
+				         'returnurl'  => $returnurl,
+				         'callbackurl'  => $callbackurl,
+				         'vcode'    => $vcode,
+				         'country'    => $country,
+				         'langcode'   => $langcode,
+				            ];
+				  
+				?>
+
+
+		<form action="<?php echo $Payment_URL.$merchant_id.'/'; ?>" method="POST">
+            <?php
+            foreach($param as $key => $value){
+            echo "<input type='hidden' class='form-control' id='".$key." 'name='".$key."' value='".$value."'>";
+            }  
+            ?>
+            
+            <button type="submit">CheckOut</button>
+         </form>
 	</div>
 			<script>
 		
@@ -73,8 +128,6 @@
          p.parentNode.removeChild(p);
 		 
     }
-	
-	
 		</script>	
 		
 	</body>

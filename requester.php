@@ -25,7 +25,7 @@
 
 			var rootRef= new Firebase('https://realtimetest123.firebaseio.com/'),
 			currentMessageRef= rootRef.child('FoodStatus');
-
+			currentMessageRef.set("Cooking");
 			currentMessageRef.on('value',function(snapshot){
 				lblCurrentMessage.innerText= snapshot.val();
 			})
