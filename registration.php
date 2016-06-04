@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Registration</title>
+		<title>Foodiliver - Registration</title>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mainCSS.css">
 	</head>
 	
 	<body>
-			<div id="registerform">	
-				<form method="post" action="post-message.php" onsubmit="return validate()">
-
-					<label for="name">Username</label>
-						<input id="name" name="name" type="text" value="" maxlength="255" />
-					<br/><br/>
-
-					<label for="displayname">Display Name</label>
-						<input id="displayname" name="name" type="text" value="" maxlength="255" />
-					<br/><br/>
-					
-					<label for="password">Password</label>
-						<input id="password" name="password" type="password" value="" maxlength="255" />
-					<br/><br/>
-
-					<label for="repassword">Re-type Password</label>
-						<input id="repassword" name="repassword" type="password" value="" maxlength="255" />
-					<br/><br/>
-					
-					<label for="email">Email Address</label>
-						<input id="email" name="email" type="text" value="" maxlength="255" /> <mark id="alert"></mark>
-					<br/><br/>
-					
-					<label for="phoneno">Phone Number</label>
-						<input id="phoneno" name="phoneno" type="text" value="" maxlength="255" />
-					<br/><br/>			
-					
-					<label>Gender</label>
-						<input name="gender" type="radio" value="male" />Male
-						<input name="gender" type="radio" value="female" />Female
-					<br/><br/>
-						
-			<!--		<label for="message">Message</label><br/>
-					<textarea id="message" name="message" rows="10" cols="80" ></textarea>
-					<br/><br/> -->
-			
-					<span id='error'>*All fields are required</span><br /><br />
-					<input type="submit" name="submit" value="Submit"/>
-					
-				</form>
-			</div>
-
+	<?php include("navTop/navTop.php") ?>
+	<div class="jumbotron container" style="margin-top:100px;">
+		<h2>Registration Form</h2>
+		<br>
+	 	<form role="form">
+		<div class="form-group">
+			<label for="name">Username: </label>
+			<input type="name" class="form-control" id="username" placeholder="Enter name">
+		</div>
+		<div class="form-group">
+			<label for="email">Email: </label>
+			<input type="email" class="form-control" id="email" placeholder="Enter email">
+		</div>
+		<div class="form-group">
+			<label for="pwd">Password: </label>
+			<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+		</div>
+		<div class="form-group">
+			<label for="repwd">Confirm password: </label>
+			<input type="repassword" class="form-control" id="repwd" placeholder="Retype password">
+		</div>
+		<div class="radiobox">
+			<label for="type">Account: </label>
+			<input type="radio" name="account">Deliverer</label>
+			<input type="radio" name="account">Restaurant</label>
+		</div>
+		<br>
+		<button type="submit" class="btn btn-default">Submit</button>
+	  </form>
+	</div>
 	</body>
 
 </html>

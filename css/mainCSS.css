@@ -72,4 +72,15 @@
 #account{
 	height: 700px;
 }
+
+#order{
+	position: fixed;
+	bottom: 12px;
+	right: 12px;
+}
+
+th, td{
+	
+	font-size:24px;
+	padding: 10px;
 }

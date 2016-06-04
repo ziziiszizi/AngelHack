@@ -24,36 +24,25 @@
 
 		<!-- Wrapper for slides -->
 		<div class="container carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="image/citem1.jpg" alt="lazy">
-				<div class="carousel-caption">
-					<h1>Feeling lazy?</h1>
-				</div>      
+			<div class="item active" align="center">
+					<h1 style="margin-top:100px">Feeling lazy?</h1> 
 		` 	</div>
 
 			<div class="item">
-				<img src="image/citem2.jpg" alt="think">
-				<div class="carousel-caption">
-					<h1>But feel like eating outside?</h3>
+				<div align="center">
+					<h1 style="margin-top:100px">But feel like eating outside?</h3>
 				</div>      
 			</div>
 			
 			<div class="item">
-				<div style="right: 50%">
-					<h1>Don't Worry</h1>
+				<div align="center">
+					<h1 style="margin-top:100px">Don't Worry</h1>
 					<h1>We "tapao" for you</h1> 
+					<button type="button" class="btn btn-success">Order Now!</button>
 				</div>
 			</div>
 		</div>
-
-		<!-- Left and right controls -->
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		  <span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		  <span class="sr-only">Next</span>
-		</a>
+		
 	</div>
 	
 	<div id="about">
