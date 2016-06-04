@@ -2,12 +2,17 @@
 <html>
 <head>
 	<meta charset=utf-8>
-	<title>REalTime MEssage</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Deliverer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mainCSS.css">
 </head>
 
 <body onload="autoReady()">
-	<div class="container">
+	<?php include("navTop/navMember.php") ?>
+	<div class="container" style="margin-top:50px;">
 		<h2 class="text-center">Food Status</h2>
 		<div class="jumbotron">
 			<h2 id="lblCurrentMessage" class="text-center"><h2>
@@ -43,15 +48,17 @@
 			 	document.getElementById("btnPickUp").disabled= false;
 				currentMessageRef.set("Ready");
 				 }
-			 	, 1000);
+			 	, 3000);
 
 		}
 
 		</script>
-		<div id="chatBox">
-			<iframe src="friendlychat/web-start/index.html" height="500">
+		<div id="chatBox" class="col-sm-12" style="margin-top:15px;margin-left:50px;">
+			<div class="text-center">
+			<iframe src="friendlychat/web-start/index.html" height="500" width="800">
   			<p>Your browser does not support iframes.</p>
 			</iframe>
+		</div>
 		</div>
 </body>
 </html>
