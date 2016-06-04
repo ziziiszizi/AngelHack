@@ -24,20 +24,23 @@
 
 		<!-- Wrapper for slides -->
 		<div class="container carousel-inner" role="listbox">
-			<div class="item active" align="center">
+			<div class="item active" align="center" style="margin:auto">
 					<h1 style="margin-top:100px">Feeling lazy?</h1> 
+					<img src="image/citem1.jpg" style="width:600px">
 		` 	</div>
 
-			<div class="item">
+			<div class="item" style="margin:auto">
 				<div align="center">
 					<h1 style="margin-top:100px">But feel like eating outside?</h3>
+					<img src="image/citem2.jpg" >
 				</div>      
 			</div>
 			
-			<div class="item">
+			<div class="item" style="margin:auto">
 				<div align="center">
 					<h1 style="margin-top:100px">Don't Worry</h1>
 					<h1>We "tapao" for you</h1> 
+					<img src="image/citem3.jpg">
 					<button type="button" class="btn btn-success">Order Now!</button>
 				</div>
 			</div>
