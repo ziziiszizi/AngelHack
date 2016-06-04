@@ -16,7 +16,7 @@
 
 	<div id="home" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
-		<ol class="carousel-indicators">
+		<ol class="carousel-indicators" style="background-color:grey; opacity: 50%;">
 		  <li data-target="#home" data-slide-to="0" class="active"></li>
 		  <li data-target="#home" data-slide-to="1"></li>
 		  <li data-target="#home" data-slide-to="2"></li>
@@ -24,10 +24,12 @@
 
 		<!-- Wrapper for slides -->
 		<div class="container carousel-inner" role="listbox">
-			<div class="item active" align="center" style="margin:auto">
+			<div class="item active text-center" style="margin:auto">
+				<div  align="center" style="margin:auto">
 					<h1 style="margin-top:100px">Feeling lazy?</h1> 
 					<img src="image/citem1.jpg" style="width:600px">
-		` 	</div>
+		` 		</div>
+			</div>
 
 			<div class="item" style="margin:auto">
 				<div align="center">
@@ -48,13 +50,21 @@
 		
 	</div>
 	
-	<div id="about">
+	<div class="container-fluid" id="about">
+	<div class="jumbotron text-center" style="margin-top:50px;">
+	<h1>About our application</h1>
+		<p>This is a platform for users which are students to become deliverer and earn some money while eating outside.</p>
+		<p>The users can switch to deliverer mode and wait for requests.</p> 
+		<p>This application will create a chain for requester, deliverer and the food sellers that all of them will get benefits for each deal done.</p>
+		<p>Requester will get a delivery service with low price while deliverer will earn reward points and discounts from sellers on next purchase.</p>
+	</div>
 	</div>
 	
 	<div id="howto">
 	</div>
 	
 	<div id="contact" class="text-center">
+	<div class="container" style="padding-top:50px;">
 	  <h2>THE DEVELOPERS</h2>
 	  <p><em>We love to hear from you!</em></p>
 	  <p>If you have any feedback to us, feel free to contact us</p>
@@ -94,6 +104,7 @@
 			<h4>ttyh@yahoo.com</h4>
 		  </div>
 		</div>
+	  </div>
 	  </div>
 	</div>
 	
